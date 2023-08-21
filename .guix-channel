@@ -1,0 +1,4 @@
+(channel
+ (version 0)
+ (directory "modules")
+ (url "https://github.com/guixcn/guix-channel.git"))
