@@ -1,5 +1,25 @@
-#+TITLE: Guix China社区的Guix Channel
+#+TITLE: Guix China 社区的 Guix 频道
 
-* 许可证
+# TODO: 介绍/定位
 
-  [[https://www.gnu.org/licenses/gpl-3.0.en.html][GPLv3]]
+** 使用
+# TODO: 解释
+將 GuixCN 频道定义加入 =~/.config/guix/channels.scm= ，以由 =guix pull= 接收更新：
+#+begin_src scheme
+  ;; ~/.config/guix/channels.scm
+  (cons* (channel
+          (name 'guixcn)
+          (url "https://github.com/guixcn/guix-channel.git")
+          (introduction
+           (make-channel-introduction
+            "993d200265630e9c408028a022f32f34acacdf29"
+            (openpgp-fingerprint
+             "7EBE A494 60CE 5E2C 0875  7FDB 3B5A A993 E1A2 DFF0"))))
+         %default-channels)
+  ;; channels.scm 在此结束。
+#+end_src
+
+[[https://guix.gnu.org/en/manual/devel/zh-cn/html_node/Home-Configuration.html][Guix Home]] 用户亦参见服务 =home-channels-service-type= 。
+
+** 许可证
+GPL-3.0-or-later
