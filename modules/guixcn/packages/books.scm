@@ -19,20 +19,20 @@
   #:use-module ((guix licenses) #:prefix license:))
 
 (define-public foliate
-  (let* ((commit "efddb107ae3c3a7c3acca73ad0c6a19981234e04")
+  (let* ((commit "afc4b033e76904f1d20604640b2727a58a2e8106")
          (revision "0")
-         (version* (git-version "3.0.0" revision commit))
+         (version* (git-version "3.2.1" revision commit))
          (foliate-js
           (origin
             (method git-fetch)
             (uri (git-reference
                   (url "https://github.com/johnfactotum/foliate-js")
-                  (commit "ad25f6b5c3d9d044941d8ea858324b20a5352512")))
+                  (commit "cc2882ff396d27ca4133af2e8f2978f19c21846e")))
             (file-name
              (git-file-name "foliate-js" version*))
             (sha256
              (base32
-              "0yfjyfhnd2nd3yln7r3h1pm08x5pv5kxvkh853s9nd66n3h6k1j4")))))
+              "0zhsk7h249dq3rcacchhk0jshksx7da26b909lnxwkk554243mjl")))))
     (package
       (name "foliate")
       (version version*)
@@ -40,11 +40,11 @@
                 (method git-fetch)
                 (uri (git-reference
                       (url "https://github.com/johnfactotum/foliate.git")
-                      (commit "efddb107ae3c3a7c3acca73ad0c6a19981234e04")))
+                      (commit commit)))
                 (file-name (git-file-name name version))
                 (sha256
                  (base32
-                  "1wicjwa8gdsjcbrj5g2bv88x0ddsf6ql2j8r7hp2p692l1bhb9dp"))))
+                  "1g2jxa3jm0mfj4jx45gw5vq5rimdsyjym3lgw2dvhns7nb42ik8j"))))
       (build-system meson-build-system)
       (arguments
        (list #:glib-or-gtk? #t
