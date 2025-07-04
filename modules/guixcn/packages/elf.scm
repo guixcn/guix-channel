@@ -21,7 +21,7 @@
      (origin
        (method git-fetch)
        (uri (git-reference
-              (url "https://github.com/Mic92/nix-ld")
+              (url "https://github.com/nix-community/nix-ld")
               (commit version)))
        (file-name (git-file-name name version))
        (sha256
