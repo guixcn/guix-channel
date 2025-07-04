@@ -1,4 +1,7 @@
 (authorizations
  (version 0)
  (("7EBE A494 60CE 5E2C 0875  7FDB 3B5A A993 E1A2 DFF0"
-   (name "Z572"))))
+   (name "Z572"))
+  (;; primary: "B3EB C086 AB0E BC0F 45E0  B4D4 33DB 374B CEE4 D9DC"
+   "F850 022B 5642 0466 2952  1EBD 8ADA 726A 3FA2 CCF2"
+   (name "cireu"))))
