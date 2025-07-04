@@ -21,8 +21,9 @@
      (origin
        (method git-fetch)
        (uri (git-reference
-             (url "https://github.com/Mic92/nix-ld")
-             (commit version)))
+              (url "https://github.com/Mic92/nix-ld")
+              (commit version)))
+       (file-name (git-file-name name version))
        (sha256
         (base32 "0jybbs9hr5rgqs17b0fswmxvfb0h3gbb4vqzh2b4mjnc5zk98m8f"))))
     (build-system meson-build-system)
