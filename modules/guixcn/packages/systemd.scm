@@ -231,6 +231,7 @@
            libgcrypt
            libseccomp
            libselinux
+           libxcrypt
            libapparmor
            libbpf
            libcap
