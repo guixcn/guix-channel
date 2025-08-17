@@ -1,5 +1,6 @@
 ;;; guixcn-channel -- Guix 中文社区特供软件频道
 ;;; Copyright © 2025 Zhu Zihao <all_but_last@163.com>
+;;; Copyright © 2025 Zephyr Du
 ;;; SPDX-License-Identifier: GPL-3.0-or-later
 
 (define-module (guixcn packages networking)
@@ -45,3 +46,28 @@
     (description
      "Xray-bin is platform for building proxies to bypass network restrictions.")
     (license license:mpl2.0)))
+
+(define-public dae-bin
+  (package
+    (name "dae-bin")
+    (version "1.0.0")
+    (source (origin
+             (method url-fetch/zipbomb)
+             (uri (string-append
+                   "https://github.com/daeuniverse/dae/releases/download/"
+                   "v" version
+                   "/dae-linux-x86_64_v2_sse.zip"))
+             (sha256
+              (base32 "1vp45w9ffmj1qpswrcbd0d5il4bxa02h0c5zr2jgkwwav1kkd5qa"))))
+    (build-system copy-build-system)
+    (arguments
+     (list #:install-plan
+           #~'(("dae-linux-x86_64_v2_sse" "bin/dae")
+               ("geoip.dat" "share/dae/")
+               ("geosite.dat" "share/dae/"))))
+    (supported-systems '("x86_64-linux"))
+    (home-page "https://https://github.com/daeuniverse/dae/")
+    (synopsis "eBPF-powered transparent proxy solution")
+    (description
+     "dae, means goose, is a high-performance transparent proxy solution using eBPF.")
+    (license license:agpl3)))
