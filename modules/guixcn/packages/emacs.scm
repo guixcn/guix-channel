@@ -23,6 +23,7 @@
                  (base32
                   "186niw4azgdpyj471cn24vjf7svwqa4k3svdf0v1i1pwig59qjv1"))))
       (build-system emacs-build-system)
+      (arguments (list #:tests? #f))    ;No test suite.
       (home-page "https://github.com/nverno/llvm-mode")
       (synopsis "Major mode for the LLVM IR language")
       (description
