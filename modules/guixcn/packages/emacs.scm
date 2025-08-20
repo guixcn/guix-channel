@@ -1,3 +1,8 @@
+;;; guixcn-channel -- Guix 中文社区特供软件频道
+;;; Copyright © 2024 Zheng Junjie <z572@z572.online>
+;;; Copyright © 2025 Hilton Chain <hako@ultrarare.space>
+;;; SPDX-License-Identifier: GPL-3.0-or-later
+
 (define-module (guixcn packages emacs)
   #:use-module (gnu packages emacs)
   #:use-module (guix build utils)

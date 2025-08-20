@@ -1,6 +1,7 @@
-;;; guixcn-channel -- Guix 中文社区特供软件频道
-;;; Copyright © 2023, 2025 Zheng Junjie <873216071@qq.com>
+;;; guixcn-channel -- Guix 中文社区特供软件频道 -*- Scheme -*-
+;;; Copyright © 2023, 2025 Zheng Junjie <z572@z572.online>
 ;;; Copyright © 2025 Zhu Zihao <all_but_last@163.com>
+;;; SPDX-License-Identifier: GPL-3.0-or-later
 
 ;; This file list the OpenPGP keys currently authorized to sign commits in
 ;; this repository.
@@ -15,7 +16,3 @@
   (;; primary: "220F 98D9 5E86 204C 0036  DA7B 6DEC 4360 408B 4185"
    "F4C2 D1DF 3FDE EA63 D1D3  0776 ACC6 6D09 CA52 8292"
    (name "hako"))))
-
-;; Local Variables:
-;; mode: scheme
-;; End:

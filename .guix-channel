@@ -1,3 +1,7 @@
+;;; guixcn-channel -- Guix 中文社区特供软件频道 -*- Scheme -*-
+;;; Copyright © 2023, 2025 Zheng Junjie <z572@z572.online>
+;;; SPDX-License-Identifier: GPL-3.0-or-later
+
 (channel
  (version 0)
  (directory "modules")

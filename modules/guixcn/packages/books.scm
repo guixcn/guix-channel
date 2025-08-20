@@ -1,5 +1,7 @@
+;;; guixcn-channel -- Guix 中文社区特供软件频道
 ;;; Copyright © 2023 pat-hwaki
-;;; Copyright © 2023 Zheng Junjie <873216071@qq.com>
+;;; Copyright © 2023 Zheng Junjie <z572@z572.online>
+;;; SPDX-License-Identifier: GPL-3.0-or-later
 
 (define-module (guixcn packages books)
   #:use-module (gnu packages freedesktop)

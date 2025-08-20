@@ -1,4 +1,6 @@
-;;; Copyright © 2023 Zheng Junjie <873216071@qq.com>
+;;; guixcn-channel -- Guix 中文社区特供软件频道
+;;; Copyright © 2023 Zheng Junjie <z572@z572.online>
+;;; SPDX-License-Identifier: GPL-3.0-or-later
 
 (define-module (guixcn packages systemd)
   #:use-module (gnu packages aidc)
