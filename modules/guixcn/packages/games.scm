@@ -22,7 +22,7 @@
 (define-public hmcl
   (package
     (name "hmcl")
-    (version "3.6.14")
+    (version "3.6.15")
     (source
      (origin
        (method url-fetch)
@@ -33,7 +33,7 @@
        (file-name (string-append name "-" version ".jar"))
        (sha256
         (base16-string->bytevector
-         "f00be201800c9bbe2e25e32f80448f3476d3e5bf759834f10e02d887ef151dbf"))))
+         "17e422c5b03acc4035a96df26fc32124dbab53cff68d90046df414f5c27bcd3e"))))
     (build-system trivial-build-system)
     (arguments
      (list
