@@ -1,5 +1,6 @@
 ;;; guixcn-channel -- Guix 中文社区特供软件频道
 ;;; Copyright © 2025 Rivule Cedar <rivulet_cedar@yeah.net>
+;;; Copyright © 2025 Zhu Zihao <all_but_last@163.com>
 ;;;
 ;;; SPDX-License-Identifier: GPL-3.0-or-later
 
@@ -25,7 +26,7 @@
        (sha256
         (base32 "1gffpp3f9g1pnd1hp4g03427zd7vlyi1dqxrq8fkxx0m9xq08c5f"))))
     (build-system copy-build-system)
-    (inputs (list python-minimal))
+    (inputs (list python-minimal-wrapper))
     (arguments
      (list
       #:install-plan
@@ -35,11 +36,6 @@
           (add-after 'unpack 'rename-file
             (lambda* (#:key inputs outputs #:allow-other-keys)
               (rename-file "./jianpu-ly.py" "./jianpu-ly") #t))
-          (add-before 'install 'patch-shebang
-            (lambda _
-              (substitute* "jianpu-ly"
-                (("#!/usr/bin/env python")
-                 "#!/usr/bin/env python3"))))
           (add-after 'install 'set-executable-permissions
             (lambda* (#:key outputs #:allow-other-keys)
               (let ((bin (string-append #$output "/bin")))
