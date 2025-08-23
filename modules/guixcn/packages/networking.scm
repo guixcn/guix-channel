@@ -1,6 +1,6 @@
 ;;; guixcn-channel -- Guix 中文社区特供软件频道
 ;;; Copyright © 2025 Zhu Zihao <all_but_last@163.com>
-;;; Copyright © 2025 Zephyr Du
+;;; Copyright © 2025 Zephyr Du <elecleus@outlook.com>
 ;;; SPDX-License-Identifier: GPL-3.0-or-later
 
 (define-module (guixcn packages networking)
