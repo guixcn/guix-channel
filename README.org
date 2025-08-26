@@ -4,13 +4,13 @@
 # Copyright © 2025 Zheng Junjie <z572@z572.online>
 # SPDX-License-Identifier: GPL-3.0-or-later
 
-#+TITLE: Guix China 社区的 Guix 频道
+#+TITLE: GNU Guix 中文社区特供软件频道
 
 # TODO: 介绍/定位
 
 ** 使用
 # TODO: 解释
-将 GuixCN 频道定义加入 =~/.config/guix/channels.scm= ，以由 =guix pull= 接收更新：
+将 =guixcn= 频道定义加入 =~/.config/guix/channels.scm= ，以由 =guix pull= 接收更新：
 #+begin_src scheme
   ;; ~/.config/guix/channels.scm
   (cons* (channel
