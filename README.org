@@ -28,4 +28,14 @@
 [[https://guix.gnu.org/en/manual/devel/zh-cn/html_node/Home-Configuration.html][Guix Home]] 用户亦参见服务 =home-channels-service-type= 。
 
 ** 许可证
-GPL-3.0-or-later
+
+GNU Guix 中文社区特供软件频道根据 GNU GPL 第 3 版或更高版本许可发布。贡献者保留
+其版权。本频道使用 [[https://reuse.software/spec-3.3/#format-of-copyright-notices][REUSE 3.3 版规范中对版权声明要求]]的一个变体以声明各源文件的版
+权详情。具体而言，贡献者应在源文件的头部使用下列所展示的格式，以声明版权所属以及
+文件使用的协议。
+
+#+begin_src
+Copyright © 2020-2025 Your Name <your@email.com>
+
+SPDX-License-Identifier: GPL-3.0-or-later
+#+end_src
