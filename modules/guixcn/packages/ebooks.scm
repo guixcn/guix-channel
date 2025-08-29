@@ -1,9 +1,10 @@
 ;;; guixcn-channel -- Guix 中文社区特供软件频道
 ;;; Copyright © 2023 pat-hwaki
 ;;; Copyright © 2023 Zheng Junjie <z572@z572.online>
+;;; Copyright © 2025 Zhu Zihao <all_but_last@163.com>
 ;;; SPDX-License-Identifier: GPL-3.0-or-later
 
-(define-module (guixcn packages books)
+(define-module (guixcn packages ebooks)
   #:use-module (gnu packages freedesktop)
   #:use-module (gnu packages gettext)
   #:use-module (gnu packages glib)
